@@ -1,7 +1,7 @@
 <?php
     $route = explode("/", $_GET['url'] ?? 'home');
 
-    if(file_exists("pages/{$route[0]}.html")) {
-        include "pages/{$route[0]}.html";
+    if(file_exists("views/pages/{$route[0]}.html")) {
+        include "views/pages/{$route[0]}.html";
     }
 ?>
