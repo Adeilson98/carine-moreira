@@ -4,3 +4,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteRule ^(.*)$ index.php?url=$1 [NC,L]
+
+RewriteRule ^(css|js|fonts|files|svg|images)/(.*) assets/$1/$2 [L]
