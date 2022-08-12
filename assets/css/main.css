@@ -186,7 +186,7 @@ header nav .__wrap a img {
 }
 
 .contact {
-    margin: 78px 0;
+    margin: 78px 0 30px;
     height: 500px;
     background-color: #650C0C;
     display: flex;
@@ -238,4 +238,57 @@ header nav .__wrap a img {
     margin-right: 15px;
     position: relative;
     top: 7px;
+}
+
+footer .__wrap .nav {
+    border-bottom: 2px solid #650C0C;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .__wrap .nav a {
+    font-family: Roboto;
+    color: #650C0C;
+    margin-right: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer img {
+    margin: 50px auto -10px;
+    display: flex;
+}
+
+footer .medias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .medias a {
+    margin-right: 15px;
+}
+
+footer .__wrap .credit {
+    border-top: 1px solid #650C0C;
+    margin-top: 50px;
+}
+
+footer .__wrap .credit p {
+    font-family: Roboto;
+    color: #858585;
+    text-align: end;
+}
+
+footer .__wrap .credit p a {
+    text-decoration: none;
+    color: #858585;
+    font-weight: bold;
+}
+
+footer .__wrap .credit p a:hover {
+    text-decoration: underline;
 }
