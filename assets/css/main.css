@@ -87,3 +87,100 @@ header nav .__wrap a img {
     color: #650C0C;
     text-align: center;
 }
+
+.blog {
+    margin: 78px 0;
+}
+
+.blog h2 {
+    font-family: Roboto;
+    font-size: 40px;
+    color: #650C0C;
+    text-align: center;
+}
+
+.blog p {
+    font-family: Roboto;
+    font-size: 24px;
+    color: #858585;
+    text-align: center;
+}
+
+.blog .flex-itens {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.blog .flex-itens .item {
+    margin: 0 10px;
+    width: 386px;
+    height: 386px;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog .flex-itens .item::before {
+    content: "Ver postagem";
+    font-family: Roboto;
+    color: white;
+    width: 318px;
+    height: 72px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 4;
+}
+
+.blog .flex-itens .item:hover::before {
+    display: flex;
+}
+
+.blog .flex-itens .item::after {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #650C0C;
+    opacity: .7;
+    display: none;
+    content: "";
+    top: 0;
+    border-radius: 30px;
+    transition: all 2s;
+}
+
+.blog .flex-itens .item:hover::after {
+    display: flex;
+    z-index: 2;
+}
+
+.cta {
+    width: 316px;
+    height: 80px;
+    background-color: #650C0C;
+    font-family: Roboto;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 48px auto 0;
+    border-radius: 15px;
+}
+
+.cta::before {
+    content: url("../svg/insta-white.svg");
+    margin-right: 15px;
+}
