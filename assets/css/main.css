@@ -184,3 +184,58 @@ header nav .__wrap a img {
     content: url("../svg/insta-white.svg");
     margin-right: 15px;
 }
+
+.contact {
+    margin: 78px 0;
+    height: 500px;
+    background-color: #650C0C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact h2 {
+    font-family: Roboto;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.contact .button {
+    width: 458px;
+    height: 80px;
+    background-color: white;
+    color: #650C0C;
+    font-family: Roboto;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact .button::before {
+    content: url("../svg/whatsappRed.svg");
+    margin-right: 15px;
+}
+
+.contact .number {
+    font-family: Roboto;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.contact .number::before {
+    content: url("../svg/phone_icon.svg");
+    margin-right: 15px;
+    position: relative;
+    top: 7px;
+}
