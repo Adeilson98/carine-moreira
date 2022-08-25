@@ -88,6 +88,31 @@ header nav .__wrap a img {
     text-align: center;
 }
 
+.about .__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.about .__wrap .text-1 {
+    font-family: Roboto;
+    font-size: 22px;
+    color: #858585;
+    width: 470px;
+    line-height: 32px;
+    margin-right: 100px;
+}
+
+.about .__wrap .text-2 {
+    font-family: Roboto;
+    font-size: 22px;
+    color: #858585;
+    width: 470px;
+    line-height: 32px;
+    margin-left: 100px;
+}
+
 .blog {
     margin: 78px 0;
 }
