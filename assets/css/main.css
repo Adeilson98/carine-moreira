@@ -53,6 +53,23 @@ header nav .__wrap a {
     color: #650C0C;
 }
 
+header nav .__wrap .contato {
+    color: white;
+    width: 220px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 137px;
+    background-color: #650C0C;
+}
+
+header nav .__wrap .contato::before {
+    content: url("../svg/whatsapp2.svg");
+    margin-right: 10px;
+}
+
 header nav .__wrap a img {
     width: 87px;
     height: 110px;
@@ -337,7 +354,14 @@ footer .__wrap .credit p a:hover {
         width: 100%;
         position: fixed;
         transform: translateX(150%);
+        background-color: white;
+        height: 50vh;
     }
+
+    header nav.__active {
+        transform: translateX(0);
+    }
+
     header nav::after {
         display: none;
     }
@@ -351,6 +375,11 @@ footer .__wrap .credit p a:hover {
         margin-right: 0;
         margin-bottom: 10px;
     }
+
+    header nav .__wrap .contato {
+        margin-left: 0px;
+    }
+
     header nav .__wrap a img {
         display: none;
     }
