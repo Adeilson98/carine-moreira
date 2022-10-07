@@ -15,9 +15,9 @@
 
 
 body {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 header .menu-mobile {
@@ -30,39 +30,39 @@ header nav {
 }
 
 header nav::after {
-    content: "";
-    width: 936px;
-    height: 2px;
     background-color: #650C0C;
-    z-index: 2;
+    content: "";
+    height: 2px;
     left: 50%;
-    transform: translateX(-50%);
     position: absolute;
+    transform: translateX(-50%);
+    width: 936px;
+    z-index: 2;
 }
 
 header nav .__wrap {
+    align-items: center;
     display: flex;
     height: 100%;
-    align-items: center;
 }
 
 header nav .__wrap a {
+    color: #650C0C;
     font-family: Roboto-Bold;
     margin-right: 15px;
     text-decoration: none;
-    color: #650C0C;
 }
 
 header nav .__wrap .contato {
-    color: white;
-    width: 220px;
-    height: 50px;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin-left: 137px;
     background-color: #650C0C;
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    margin-left: 137px;
+    width: 220px;
 }
 
 header nav .__wrap .contato::before {
@@ -71,31 +71,31 @@ header nav .__wrap .contato::before {
 }
 
 header nav .__wrap a img {
-    width: 87px;
     height: 110px;
     margin-right: 375px;
+    width: 87px;
 }
 
 .banner {
-    width: 100%;
-    height: 645px;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
+    height: 645px;
+    justify-content: center;
+    width: 100%;
 }
 
 .banner h1 {
+    color: #650C0C;
     font-family: Bellefair;
     font-size: 100px;
-    color: #650C0C;
     font-weight: 500;
 }
 
 .line {
-    width: 345px;
+    background-color: #650C0C;
     height: 2px;
     margin: 0 auto;
-    background-color: #650C0C;
+    width: 345px;
 }
 
 .about {
@@ -103,35 +103,35 @@ header nav .__wrap a img {
 }
 
 .about h2 {
+    color: #650C0C;
     font-family: Roboto;
     font-size: 40px;
-    color: #650C0C;
     text-align: center;
 }
 
 .about .__wrap {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-bottom: 30px;
 }
 
 .about .__wrap .text-1 {
+    color: #858585;
     font-family: Roboto;
     font-size: 22px;
-    color: #858585;
-    width: 470px;
     line-height: 32px;
     margin-right: 100px;
+    width: 470px;
 }
 
 .about .__wrap .text-2 {
+    color: #858585;
     font-family: Roboto;
     font-size: 22px;
-    color: #858585;
-    width: 470px;
     line-height: 32px;
     margin-left: 100px;
+    width: 470px;
 }
 
 .blog {
@@ -139,52 +139,52 @@ header nav .__wrap a img {
 }
 
 .blog h2 {
+    color: #650C0C;
     font-family: Roboto;
     font-size: 40px;
-    color: #650C0C;
     text-align: center;
 }
 
 .blog p {
+    color: #858585;
     font-family: Roboto;
     font-size: 24px;
-    color: #858585;
     text-align: center;
 }
 
 .blog .flex-itens {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .blog .flex-itens .item {
-    margin: 0 10px;
-    width: 386px;
-    height: 386px;
-    border-radius: 30px;
-    position: relative;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    border-radius: 30px;
+    display: flex;
+    height: 386px;
+    justify-content: center;
+    margin: 0 10px;
+    position: relative;
+    width: 386px;
 }
 
 .blog .flex-itens .item::before {
-    content: "Ver postagem";
-    font-family: Roboto;
-    color: white;
-    width: 318px;
-    height: 72px;
-    display: none;
-    justify-content: center;
     align-items: center;
-    border: 2px solid white;
     border-radius: 15px;
+    border: 2px solid white;
+    color: white;
+    content: "Ver postagem";
+    display: none;
+    font-family: Roboto;
     font-size: 18px;
     font-weight: bold;
+    height: 72px;
+    justify-content: center;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    width: 318px;
     z-index: 4;
 }
 
@@ -193,16 +193,16 @@ header nav .__wrap a img {
 }
 
 .blog .flex-itens .item::after {
-    height: 100%;
-    width: 100%;
-    position: absolute;
     background-color: #650C0C;
-    opacity: .7;
-    display: none;
-    content: "";
-    top: 0;
     border-radius: 30px;
+    content: "";
+    display: none;
+    height: 100%;
+    opacity: .7;
+    position: absolute;
+    top: 0;
     transition: all 2s;
+    width: 100%;
 }
 
 .blog .flex-itens .item:hover::after {
@@ -210,20 +210,27 @@ header nav .__wrap a img {
     z-index: 2;
 }
 
+.blog .flex-itens .item img {
+    border-radius: 30px;
+    height: 385px;
+    object-fit: cover;
+    width: 385px;
+}
+
 .cta {
-    width: 316px;
-    height: 80px;
+    align-items: center;
     background-color: #650C0C;
-    font-family: Roboto;
-    font-weight: bold;
+    border-radius: 15px;
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: Roboto;
     font-size: 24px;
-    text-decoration: none;
+    font-weight: bold;
+    height: 80px;
+    justify-content: center;
     margin: 48px auto 0;
-    border-radius: 15px;
+    text-decoration: none;
+    width: 316px;
 }
 
 .cta::before {
@@ -232,35 +239,35 @@ header nav .__wrap a img {
 }
 
 .contact {
-    margin: 78px 0 30px;
-    height: 500px;
+    align-items: center;
     background-color: #650C0C;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    height: 500px;
+    justify-content: center;
+    margin: 78px 0 30px;
 }
 
 .contact h2 {
+    color: white;
     font-family: Roboto;
     font-size: 40px;
-    color: white;
     text-align: center;
 }
 
 .contact .button {
-    width: 458px;
-    height: 80px;
+    align-items: center;
     background-color: white;
+    border-radius: 15px;
     color: #650C0C;
+    display: flex;
     font-family: Roboto;
     font-size: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    text-decoration: none;
     font-weight: bold;
+    height: 80px;
+    justify-content: center;
+    text-decoration: none;
+    width: 458px;
 }
 
 .contact .button::before {
@@ -269,14 +276,14 @@ header nav .__wrap a img {
 }
 
 .contact .number {
+    align-items: center;
+    color: white;
+    display: flex;
     font-family: Roboto;
     font-size: 20px;
-    color: white;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
     justify-content: center;
+    margin-top: 30px;
+    text-decoration: none;
 }
 
 .contact .number::before {
@@ -287,31 +294,31 @@ header nav .__wrap a img {
 }
 
 footer .__wrap .nav {
-    border-bottom: 2px solid #650C0C;
-    width: 100%;
-    height: 120px;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    border-bottom: 2px solid #650C0C;
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    width: 100%;
 }
 
 footer .__wrap .nav a {
-    font-family: Roboto;
     color: #650C0C;
-    margin-right: 15px;
+    font-family: Roboto;
     font-weight: bold;
+    margin-right: 15px;
     text-decoration: none;
 }
 
 footer img {
-    margin: 50px auto -10px;
     display: flex;
+    margin: 50px auto -10px;
 }
 
 footer .medias {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 footer .medias a {
@@ -324,15 +331,15 @@ footer .__wrap .credit {
 }
 
 footer .__wrap .credit p {
-    font-family: Roboto;
     color: #858585;
+    font-family: Roboto;
     text-align: end;
 }
 
 footer .__wrap .credit p a {
-    text-decoration: none;
     color: #858585;
     font-weight: bold;
+    text-decoration: none;
 }
 
 footer .__wrap .credit p a:hover {
@@ -342,20 +349,20 @@ footer .__wrap .credit p a:hover {
 @media ( max-width: 428px ) {
 
     header {
-        width: 100%;
-        position: fixed;
         background-color: white;
-        top: 0px;
         left: 0px;
+        position: fixed;
+        top: 0px;
+        width: 100%;
         z-index: 5;
     }
 
     header nav {
-        width: 100%;
-        position: fixed;
-        transform: translateX(150%);
         background-color: white;
         height: 50vh;
+        position: fixed;
+        transform: translateX(150%);
+        width: 100%;
     }
 
     header nav.__active {
@@ -385,17 +392,17 @@ footer .__wrap .credit p a:hover {
     }
 
     header .menu-mobile {
-        display: flex;
         align-items: center;
-        width: 100%;
-        height: 60px;
         box-shadow: -4px -1px 5px #858585;
+        display: flex;
+        height: 60px;
         position: relative;
+        width: 100%;
     }
 
     header .menu-mobile a img {
-        width: 40px;
         margin-left: 6px;
+        width: 40px;
     }
 
     .banner {
@@ -422,20 +429,20 @@ footer .__wrap .credit p a:hover {
     }
 
     .about .__wrap .text-1 {
-        width: 100%;
         margin-right: 0;
         text-align: center;
+        width: 100%;
     }
 
     .about .__wrap .text-2 {
-        width: 100%;
         margin-left: 0px;
         text-align: center;
+        width: 100%;
     }
 
     .about .__wrap img {
-        width: 90%;
         margin: 0 auto;
+        width: 90%;
     }
     .blog {
         margin: 40px 0;
@@ -446,14 +453,14 @@ footer .__wrap .credit p a:hover {
     }
 
     .blog .flex-itens .item {
-        width: 90%;
         height: 310px;
         margin: 0 0 15px;
+        width: 90%;
     }
 
     .blog .flex-itens .item img {
-        width: 100%;
         height: 100%;
+        width: 100%;
     }
 
     .contact .button {
@@ -468,38 +475,6 @@ footer .__wrap .credit p a:hover {
     .contact h2 {
         font-size: 31px;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     footer {
         width: 100%;
